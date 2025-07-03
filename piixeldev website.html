@@ -1,0 +1,1962 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiixelDEV Agency - Complete Website</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'montserrat', sans-serif;
+            background: linear-gradient(135deg, #6B46C1 0%, #9333EA 50%, #EC4899 100%);
+            min-height: 100vh;
+            color: white;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+		.img-cover {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+		
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;			
+        }
+		
+		.intro-wrapper {
+    width: 100%;
+    padding: 20px 0 80px 0;
+    background: url(https://i.imgur.com/n828w3F.jpeg) center / cover no-repeat;
+}
+        /* Header */
+        .header {
+            padding: 20px 0;
+            position: relative;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .date {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-circle {
+            width: 60px;
+            height: 60px;
+            background: #8B5CF6;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .logo-text h1 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .logo-text p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .agency-badge svg {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 8px 8px;
+            border-radius: 35%;
+			display: inline-flex;
+			height: 40px;
+			
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .hero h2 {
+            font-size: 38px;
+            margin-bottom: 50px;
+        }
+
+        /* Laptop Mockup */
+            .laptop {
+      position: relative;
+      margin: auto;
+      max-width: 50rem;
+    }
+
+    .laptop__screen {
+      position: relative;
+      z-index: 1;
+      padding: 3%;
+      border-radius: 2rem;
+      background: #ecf1f7;
+      background-image: linear-gradient(to bottom, #333, #111);
+      box-shadow: 0 .1rem 0 #cfcfcf;
+      border: 2px solid #ccc;
+    }
+
+
+
+    .laptop__bottom {
+      position: relative;
+		z-index: 1;
+		margin-right: -7%;
+		margin-left: -7%;
+		height: .7rem;
+		background: #e9eff5;
+		background-image: linear-gradient(to right, #d2dde9 0%, #f9fcff 15%, #e5ebf2 40%, #e5ebf2 60%, #f9fcff 85%, #d2dde9 100%);
+    }
+
+    .laptop__bottom::before {
+      display: block;
+			margin: 0 auto;
+			width: 20%;
+			height: .7rem;
+			border-radius: 0 0 .2rem .2rem;
+			background: #f6f9fc;
+			background-image: linear-gradient(to right, #c3cfdb 0%, #f6f9fc 10%, #f6f9fc 90%, #c3cfdb 100%);
+			content: " ";
+    }
+
+    .laptop__under {
+      position: absolute;
+		top: 100%;
+		left: 22.7%;
+		display: block;
+		width: 54.5%;
+		height: 1.5rem;
+		background: #e2e8f0;
+		background-image: linear-gradient(to bottom, #e2e8f0, #bec7d1);
+    }
+
+    .laptop__under::before,
+    .laptop__under::after {
+      position: absolute;
+      top: 0%;
+      bottom: 0;
+      display: block;
+      width: 50%;
+      background: inherit;
+      content: " ";
+    }
+
+    .laptop__under::before {
+      right: 100%;
+	  width: 54.5%;
+      border-bottom-left-radius: 100%;
+    }
+
+    .laptop__under::after {
+      left: 100%;
+	  width: 54.7%;
+      border-bottom-right-radius: 100%;
+    }
+
+    .laptop__shadow {
+      position: absolute;
+      right: -10%;
+      bottom: -2.5rem;
+      left: -10%;
+      z-index: 0;
+      height: 2rem;
+      background: radial-gradient(ellipse closest-side, #000, transparent);
+      opacity: 0.5;
+    }
+		
+		
+		
+
+        .screen {
+            width: 100%;
+            height: 100%;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .browser-bar {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 10px;
+            margin-top: -20px;
+			margin-left: -30px;
+			margin-right: -30px;
+			padding: 10px 25px 10px;
+			background-color: #5c16f7;
+        }
+
+        .browser-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+			background: #ddd;
+        }
+
+        .website-content {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 15px;
+			align-items: flex-start;
+}
+
+.website-left-col {
+    display: flex
+;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%
+100%
+;
+}
+
+.website-right-col {
+    display: flex
+;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right-col-top {
+    display: grid
+;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+
+
+        .website-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .website-logo {
+			padding-top: 15px;
+        }
+
+        .website-title {
+			text-align: left;
+			padding-top: 15px;
+            font-size: 24px;
+            color: #5c16f7;
+            font-weight: bold;
+			border-top: 1px solid #ddd;
+
+        }
+
+        .website-subtitle {
+			text-align: left;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            background: #5c16f7;
+            color: white;
+            padding: 8px 30px;
+            border: none;
+            border-radius: 20px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #656565;
+            padding: 12px 10px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .website-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            height: 120px;
+        }
+
+        .website-img {
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #eee;
+}
+		.website-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.website-img1 {
+	padding: 15px;
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: #eee;
+}
+		.website-img1 img {
+    height: 100%;
+}
+
+        .website-img.large {
+            grid-row: span 2;
+        }
+
+        /* Services Section */
+		
+		.services-wrapper {
+			width: 100%;
+			padding: 80px 0;
+			background-image: linear-gradient(0deg, rgb(131 119 243), rgb(86 21 237));			
+			}
+		
+		.services {
+            padding: 0; /* Removed padding */
+        }
+
+        .services-title {
+            font-size: 42px;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .service-item {
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 20px;
+            transition: transform 0.3s ease;
+            background: rgba(255, 255, 255, 0.05); /* Added subtle background to items */
+        }
+
+        .service-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-icon {
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+			box-shadow: 0 0 0 0.5px; /* Inner outline */
+            font-size: 24px;
+        }
+
+        .icon-middle-ring {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+	
+        .icon-middle-ring-stats {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .service-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 15px;
+            line-height: 1.4;
+        }
+		
+		.pourquoidisplay {
+			display: flex;
+			justify-content: space-between;
+}
+
+
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        /* Styles from piixel 2.html */
+        .hero-section {
+            background: linear-gradient(135deg, rgb(22 21 61 / 85%), rgb(33 16 73 / 85%)), url(https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop) center / cover no-repeat;
+			min-height: 100vh;
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="g" cx="50%" cy="50%"><stop offset="0%" stop-color="rgba(255,255,255,0.1)"/><stop offset="100%" stop-color="rgba(255,255,255,0)"/></radialGradient></defs><circle cx="200" cy="200" r="100" fill="url(%23g)"/><circle cx="800" cy="300" r="150" fill="url(%23g)"/><circle cx="300" cy="700" r="120" fill="url(%23g)"/></svg>') no-repeat;
+            background-size: cover;
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: 2rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+			display: flex;
+			gap: 10px;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-bottom: 3rem;
+			text-align: center;
+        }
+
+        .stat-circle {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            position: relative;
+            background: conic-gradient(#fff 0deg, #fff var(--percentage), rgba(255,255,255,0.2) var(--percentage), rgba(255,255,255,0.2) 360deg);
+            display: flex;
+            align-items: center;
+			box-shadow: 0 0 15px 1px; /* Inner outline */
+            justify-content: center;
+        }
+
+        .stat-circle::before {
+            content: '';
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: rgba(109, 40, 217, 0.8);
+            position: absolute;
+        }
+
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            position: relative;
+            z-index: 1;
+        }
+
+        .stat-text {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .phone-mockup {
+			margin: auto;
+			width: 280px;
+            background: #000;
+            border-radius: 30px;
+            padding: 10px;
+            position: relative;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .phone-screen {
+            background: #fff;
+            border-radius: 20px;
+            height: 500px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .phone-header {
+            background: #f8fafc;
+            padding: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .phone-content {
+            padding: 1rem;
+            height: calc(100% - 80px);
+            overflow-y: auto;
+        }
+
+        .hotel-card {
+            background: #fff;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .hotel-image1 {
+			background-image: url("https://i.imgur.com/Af5Fg5k.jpeg");
+            position: relative;
+			background-size: cover;
+			max-width: 100%;
+            height: 120px;
+        }
+		
+		.hotel-image2 {
+			background-image: url("https://i.imgur.com/4C2t6RL.jpeg");
+            position: relative;
+			background-size: cover;
+			max-width: 100%;
+            height: 120px;
+        }
+		
+		.hotel-image3 {
+			background-image: url("https://i.imgur.com/VfdWYjT.png");
+            position: relative;
+			background-size: cover;
+			max-width: 100%;
+            height: 120px;
+        }
+
+        .hotel-info {
+            padding: 1rem;
+            color: #1f2937;
+        }
+
+        .hotel-name {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .hotel-price {
+            color: #6366f1;
+            font-weight: bold;
+        }
+
+        .features-section {
+            background: #f8fafc;
+            padding: 5rem 2rem;
+            color: #1f2937;
+			margin-bottom: -10%;
+        }
+
+        .features-title {
+            text-align: left;
+            margin-bottom: 3rem;
+        }
+
+        .features-title h2 {
+            font-size: 2.5rem;
+			font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #6366f1, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #000, #535353);
+            border-radius: 15px;
+            padding: 1rem;
+			padding-left: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+			color: #fff;
+        }
+
+        .feature-card:nth-child(even) {
+            background: linear-gradient(135deg, #6366f1, #bd65ff);
+            color: #fff;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        }
+
+        .feature-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            opacity: 0.7;
+        }
+
+        .feature-title {
+            font-size: 1.7rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+        }
+
+        .design-showcase {
+			background: linear-gradient(rgba(31, 41, 55, 0.9), rgba(31, 41, 55, 0.9)), url(https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=2070&auto=format&fit=crop) center / cover no-repeat;            
+			padding: 5rem 2rem;
+            color: #fff;
+        }
+
+        .showcase-title {
+            text-align: left;
+            margin-bottom: 3rem;
+        }
+
+        .showcase-title h2 {
+            font-size: 2.5rem;
+			font-weight: 900;
+			display: flex;
+			gap: 10px;
+        }
+		
+		.showcase-title p {
+            font-size: 1.5rem;
+        }
+
+
+        .design-card {
+            background: #374151;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .design-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .design-preview {
+            height: 200px;
+            background: linear-gradient(45deg, #6366f1, #8b5cf6, #a855f7);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .design-info {
+            padding: 1.5rem;
+        }
+
+        .design-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .design-description {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #fff;
+            color: #6366f1;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        /* Styles from piixel 3.html */
+        .formula-header {
+            text-align: left;
+            padding: 40px 0;
+        }
+
+        .formula-header h1 {
+            font-size: 2.4rem;
+            font-weight: 900;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+			display: flex;
+			gap: 15px;
+        }
+
+        .formula-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .formula-features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+		
+		.formula-features-color {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+
+        .formula-feature-card {
+            background: #fff;
+            padding: 25px;
+            backdrop-filter: blur(10px);
+            border: 1px solid #ddd;
+            transition: all 0.3s ease;
+            cursor: pointer;
+			border-radius: 20px 60px;
+        }
+
+        .formula-feature-card:hover {
+            transform: translateY(-5px);
+            background: #fff3fe;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+		
+		#formula-feature-id {
+            background: #1d1d1d;
+            padding: 25px;
+            backdrop-filter: blur(10px);
+            border: 1px solid #212121;
+            transition: all 0.3s ease;
+            cursor: pointer;
+			border-radius: 20px 60px;
+
+        }
+
+        #formula-feature-id:hover {
+            transform: translateY(-5px);
+            background: #2f2f2f;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+		
+
+        .formula-feature-title {
+			color: #000;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 8px;
+			height: 60px;
+			margin-left: 30px;
+        }
+		
+        .comparison-section {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 30px;
+            padding: 40px;
+            margin-bottom: 60px;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .comparison-title {
+            font-size: 2.3rem;
+            font-weight: 900;
+            text-align: left;
+			color: #000;
+        }
+		
+		.comparison-subtitle {
+            text-align: left; 
+			font-size: 25px; 
+			color: #000; 
+			margin-bottom: 30px;
+        }
+		
+
+        .comparison-row {
+            display: contents;
+        }
+
+        .ota-section {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .platform-name {
+            background: #8B5CF6;
+            padding: 12px 20px;
+            border-radius: 15px;
+            margin: 8px 0;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+        }
+
+        .commission-rate {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 12px;
+            border-radius: 15px;
+            margin: 8px 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .solution-section {
+            background: #fff;
+            border-radius: 30px;
+            padding: 50px;
+            text-align: left;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+		
+
+
+        .solution-title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+			display: -webkit-inline-box;
+			gap: 15px;
+			display: inline-flex;
+			text-align: left;
+			color: #3a0d65;
+        }
+		
+		.solution-title svg{
+			height: 60px; 
+			margin-top: 10px;
+			color: #3a0d65;
+        }
+		
+        .solution-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+			text-align: left;
+			color: #7d26e4;
+			margin-top: -35px;
+			margin-left: 5px;
+        }
+
+
+        .solution-offer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .solution-box {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+		
+		.xxxx4cls-1 {
+        fill: #fff;
+      }
+
+      .xxxx4cls-2 {
+        fill: #5c16f7;
+      }
+
+        .zero-commission {
+            font-size: 4.377rem;
+            font-weight: bold;
+            color: #FFF;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .contact-section {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .contact-title {
+            font-size: 2rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            font-size: 1.1rem;
+            opacity: 0.9;
+			gap: 50px;
+			display: inline-flex;
+        }
+
+        .formula-cta-button {
+			display: inline-grid;
+            background: linear-gradient(135deg, #8122f8 0%, #a031fc 100%);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 20px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 20px 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .formula-cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+		
+		.clsxxxx45-1 {
+		    fill: #7d26e4;
+		}
+		
+		.clsxxxx45-7 {
+		    fill: #fff;
+		}
+		
+		.svgreservations {
+			height: 40px;
+		}
+		
+        /* Responsive */
+        @media (max-width: 768px) {
+		.screen {
+            width: 100%;
+            height: 100%;
+            background: white;
+            border-radius: 25px;
+            padding: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+		
+		.showcase-title p {
+            font-size: 15px;
+        }
+		
+		.formula-features-grid {
+            gap: 5px;
+        }
+		
+		.formula-feature-title {
+            font-size: 1rem;
+            margin-bottom: 26px;
+			height: 40px;
+			margin-left: 25px;
+        }
+		
+		.formula-feature-card {
+            padding: 15px;
+			margin-bottom: 12px;
+        }
+		
+		.gallery-cell img {
+			display: block;
+			max-width: 100%;
+		}
+		
+		.features-title h2 {
+            font-size: 1.3rem;
+			text-align: center;
+        }
+		
+		.feature-title {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+		
+		.feature-number {
+            font-size: 1.5rem;
+        }
+		
+		.comparison-title {
+            font-size: 1rem;
+            font-weight: 900;
+            text-align: left;
+			color: #000;
+        }
+		
+		.comparison-subtitle {
+            font-size: 15px;
+            text-align: left;
+			color: #000;
+        }
+		
+		.comparison-section {
+			padding: 20px;
+		}
+		
+		.solution-title {
+			gap: 5px;
+            font-size: 1.5rem;
+        }
+		
+		.solution-title svg {
+            height: 25px;
+        }
+		
+		.solution-subtitle {
+			margin-top: -25px;
+            font-size: 15px;
+		}
+		
+		.solution-subtitle2 {
+			margin-top: -15px;
+		}
+		
+		.solution-section {
+			    padding: 20px;
+		}
+		
+		.contact-title {
+			font-size: 18px;
+		}
+		
+		.contact-info {
+			font-size: 13px;
+			display: inline;
+		}
+		
+		.showcase-title h2 {
+            font-size: 1.3rem;
+        }
+		
+		.hero-text h1 {
+            font-size: 1.3rem;
+        }
+		
+		.hero-text p {
+            font-size: 13px;
+			text-align: left;
+        }
+		
+		.svgreservations {
+			height: 25px;
+		}
+		
+            .laptop {
+      position: relative;
+      margin: auto;
+      max-width: 55rem;
+    }
+
+    .laptop__screen {
+      position: relative;
+      z-index: 1;
+      padding: 3%;
+      border-radius: 2rem;
+      background: #ecf1f7;
+      background-image: linear-gradient(to bottom, #333, #111);
+      box-shadow: 0 .1rem 0 #cfcfcf;
+      border: 2px solid #ccc;
+    }
+
+
+
+    .laptop__bottom {
+      position: relative;
+		z-index: 1;
+		margin-right: -7%;
+		margin-left: -7%;
+		height: 0rem;
+		background: #e9eff5;
+		background-image: linear-gradient(to right, #d2dde9 0%, #f9fcff 15%, #e5ebf2 40%, #e5ebf2 60%, #f9fcff 85%, #d2dde9 100%);
+    }
+
+    .laptop__bottom::before {
+      display: block;
+			margin: 0 auto;
+			width: 0%;
+			height: 0rem;
+			border-radius: 0 0 .2rem .2rem;
+			background: #f6f9fc;
+			background-image: linear-gradient(to right, #c3cfdb 0%, #f6f9fc 10%, #f6f9fc 90%, #c3cfdb 100%);
+			content: " ";
+    }
+
+    .laptop__under {
+      position: absolute;
+		top: 100%;
+		left: 22.7%;
+		display: block;
+		width: 54.5%;
+		height: 0rem;
+		background: #e2e8f0;
+		background-image: linear-gradient(to bottom, #e2e8f0, #bec7d1);
+    }
+
+    .laptop__under::before,
+    .laptop__under::after {
+      position: absolute;
+      top: 0%;
+      bottom: 0;
+      display: block;
+      width: 50%;
+      background: inherit;
+      content: " ";
+    }
+
+    .laptop__under::before {
+      right: 100%;
+	  width: 0%;
+      border-bottom-left-radius: 100%;
+    }
+
+    .laptop__under::after {
+      left: 100%;
+	  width: 0%;
+      border-bottom-right-radius: 100%;
+    }
+
+    .laptop__shadow {
+      position: absolute;
+      right: -10%;
+      bottom: -2.5rem;
+      left: -10%;
+      z-index: 0;
+      height: 0rem;
+      background: radial-gradient(ellipse closest-side, #000, transparent);
+      opacity: 0.5;
+    }
+
+            .hero h2 {
+                font-size: 32px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+			
+		
+
+            .services-title {
+                font-size: 18px;
+				text-align: left;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .formula-header h1 {
+                font-size: 32px;		
+            }
+			
+			
+			
+            
+            .formula-features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+          
+            
+            .solution-offer {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .zero-commission {
+                font-size: 3rem;
+            }
+        }
+		/* Responsive End*/
+
+
+        /* Animations */
+        @keyframes float {
+            0%, 100% { transform: rotateX(5deg) rotateY(-5deg) translateY(0px); }
+            50% { transform: rotateX(5deg) rotateY(-5deg) translateY(-10px); }
+        }
+
+        .laptop {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .service-item {
+            animation: fadeInUp 0.6s ease forwards;
+            opacity: 0;
+        }
+
+        .service-item:nth-child(1) { animation-delay: 0.1s; }
+        .service-item:nth-child(2) { animation-delay: 0.2s; }
+        .service-item:nth-child(3) { animation-delay: 0.3s; }
+        .service-item:nth-child(4) { animation-delay: 0.4s; }
+        .service-item:nth-child(5) { animation-delay: 0.5s; }
+        .service-item:nth-child(6) { animation-delay: 0.6s; }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animated {
+            animation: fadeInUp 0.8s ease-out;
+        }
+		
+		.st0xxxx4 {
+			 fill: #fff;
+		}
+		
+		.st0xxxx5 {
+			 fill: #8123fd;
+		}
+		
+		.st0xxxx6 {
+			fill: #000;
+			height: 60px;
+		}
+		
+
+		
+
+
+
+    </style>
+</head>
+<body>
+    <div class="intro-wrapper">
+        <div class="container">
+            <header class="header">
+                <div class="header-content">
+                    <div class="date"><b>Piixel</b>Dev.com</div>
+                    <svg id="Layer_2" data-name="Layer 2" style="height: 120px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 383.8 173.62">
+                      <g id="Layer_1-2" data-name="Layer 1">
+                        <circle class="xxxx4cls-2" cx="79.09" cy="79.09" r="79.09"></circle>
+                        <path class="xxxx4cls-1" d="M60.66,84.33h8.02c12.56,0,20.44-7.57,20.44-19.72s-7.89-19.8-20.44-19.8h-21.04v53.5h13.02v-13.99ZM60.66,56.74h7.23c5.39,0,8.09,2.9,8.09,7.87s-2.7,7.8-8.09,7.8h-7.23v-15.67ZM95.17,56.89h12.49v41.43h-12.49v-41.43ZM93.79,44.58c0-4.36,3.02-7.72,7.62-7.72s7.63,3.13,7.63,7.49c0,4.59-3.02,7.95-7.63,7.95s-7.62-3.36-7.62-7.72ZM114.36,44.58c0-4.36,3.02-7.72,7.62-7.72s7.63,3.13,7.63,7.49c0,4.59-3.02,7.95-7.63,7.95s-7.62-3.36-7.62-7.72ZM115.74,56.89h12.49v41.43h-12.49v-41.43ZM152.55,87.46l-6.84,10.85h-13.54l13.54-20.71-13.15-20.71h14.07l6.31,10.47,6.57-10.47h13.21l-13.15,20.18,13.61,21.25h-14.26l-6.38-10.85ZM194.62,99c6.77,0,11.77-2.29,15.19-6.73l-6.57-7.95c-2.43,2.45-4.73,3.59-8.22,3.59-4.6,0-7.69-2.45-8.74-6.65h25.9c.07-1.15.2-2.52.2-3.59,0-13.68-8.55-21.48-19.06-21.48-11.24,0-19.59,8.87-19.59,21.32s8.22,21.48,20.9,21.48ZM193.37,66.52c3.88,0,6.64,2.75,7.3,7.11h-14.59c.72-4.36,3.42-7.11,7.3-7.11ZM218.15,41.6h12.49v56.71h-12.49v-56.71ZM286.78,71.56c0-16.43-10.45-26.75-25.7-26.75h-21.76v53.5h21.76c15.25,0,25.7-10.32,25.7-26.75ZM252.33,86.24v-29.35h8.22c7.82,0,13.08,5.43,13.08,14.67s-5.26,14.67-13.08,14.67h-8.22ZM306.5,86.62h24.06v11.69h-36.94v-53.5h36.09v11.69h-23.2v9.02h20.44v11.31h-20.44v9.78ZM383.8,44.81l-19.72,53.5h-12.82l-19.65-53.5h14.07l12.49,34.85,12.75-34.85h12.88ZM69.9,104.91l-22.26,53.5h5.36l5.84-14.29h27.12l5.84,14.29h5.42l-22.26-53.5h-5.08ZM60.72,139.53l11.68-28.74,11.68,28.74h-23.37ZM133.05,125.93c-3.06-5.27-8.35-8.03-14.47-8.03-10.43,0-18.36,7.87-18.36,19.41s7.93,19.57,18.36,19.57c5.98,0,11.2-2.67,14.26-7.8v5.12c0,9.94-4.24,14.6-13.49,14.6-5.63,0-10.92-2.06-14.4-5.5l-2.5,4.13c3.83,3.97,10.36,6.19,17.04,6.19,12.1,0,18.29-6.27,18.29-20.1v-35.31h-4.73v7.72ZM119.07,152.07c-8.07,0-13.84-6.04-13.84-14.75s5.77-14.67,13.84-14.67,13.91,5.96,13.91,14.67-5.84,14.75-13.91,14.75ZM165.81,117.9c-10.29,0-17.87,8.48-17.87,20.41s7.79,20.48,19.2,20.48c5.77,0,10.85-2.29,14.12-6.57l-2.78-3.52c-2.78,3.52-6.75,5.27-11.2,5.27-8,0-13.84-5.58-14.4-13.99h30.6c0-.61.07-1.22.07-1.68,0-12.08-7.44-20.41-17.73-20.41ZM152.88,135.94c.63-7.87,5.84-13.38,12.94-13.38s12.38,5.5,13.01,13.38h-25.94ZM227.3,135.1v23.31h-4.94v-22.78c0-8.48-4.03-12.84-10.99-12.84-7.86,0-12.8,5.35-12.8,14.52v21.1h-4.94v-40.2h4.73v7.41c2.64-4.89,7.58-7.72,13.91-7.72,8.9,0,15.02,5.66,15.02,17.2ZM242.19,138.31c0,9.48,5.84,15.67,13.84,15.67,4.24,0,8.14-1.83,10.64-5.89l3.69,2.75c-2.92,5.2-8.14,7.95-14.33,7.95-10.92,0-18.85-8.48-18.85-20.48s7.93-20.41,18.85-20.41c6.19,0,11.41,2.68,14.33,7.95l-3.69,2.75c-2.5-4.05-6.4-5.96-10.64-5.96-8,0-13.84,6.27-13.84,15.67ZM305.34,118.21h4.87l-18.29,45.02c-3.06,7.87-6.96,10.4-12.17,10.4-3.41,0-6.68-1.22-8.9-3.67l2.29-4.05c1.81,1.99,4.03,3.06,6.68,3.06,3.27,0,5.49-1.68,7.58-6.73l1.6-3.9-16.34-40.13h5.15l13.77,34.16,13.77-34.16Z"></path>
+                      </g>
+                    </svg>
+                    <div class="agency-badge"><a href="https://instagram.com/piixeldev" target="_blank"><svg viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6C2 3.79086 3.79086 2 6 2H18C20.2091 2 22 3.79086 22 6V18C22 20.2091 20.2091 22 18 22H6C3.79086 22 2 20.2091 2 18V6ZM6 4C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4H6ZM12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9ZM7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12ZM17.5 8C18.3284 8 19 7.32843 19 6.5C19 5.67157 18.3284 5 17.5 5C16.6716 5 16 5.67157 16 6.5C16 7.32843 16.6716 8 17.5 8Z"></path>
+    </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/piixeldev" target="_blank"><svg fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z"></path>
+    <path d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z"></path>
+    <path d="M11 19H12C12.5523 19 13 18.5523 13 18V13.5C13 12 16 11 16 13V18.0004C16 18.5527 16.4477 19 17 19H18C18.5523 19 19 18.5523 19 18V12C19 10 17.5 9 15.5 9C13.5 9 13 10.5 13 10.5V10C13 9.44771 12.5523 9 12 9H11C10.4477 9 10 9.44772 10 10V18C10 18.5523 10.4477 19 11 19Z"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z"></path>
+    </svg>
+                    </a>
+                    <a href="https://facebook.com/piixeldev" target="_blank"><svg viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H15V13.9999H17.0762C17.5066 13.9999 17.8887 13.7245 18.0249 13.3161L18.4679 11.9871C18.6298 11.5014 18.2683 10.9999 17.7564 10.9999H15V8.99992C15 8.49992 15.5 7.99992 16 7.99992H18C18.5523 7.99992 19 7.5522 19 6.99992V6.31393C19 5.99091 18.7937 5.7013 18.4813 5.61887C17.1705 5.27295 16 5.27295 16 5.27295C13.5 5.27295 12 6.99992 12 8.49992V10.9999H10C9.44772 10.9999 9 11.4476 9 11.9999V12.9999C9 13.5522 9.44771 13.9999 10 13.9999H12V21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z"></path>
+    </svg>
+                    </a>
+                </div>
+            </div></header>
+
+            <section class="hero">
+                <h2>Making your business connected..</h2>
+                
+                <div class="laptop-container">
+                    <div class="laptop">
+                        <div class="laptop__screen">
+                          <div class="screen">
+                                    <div class="browser-bar">
+                                        <div class="browser-dot"></div>
+                                        <div class="browser-dot"></div>
+                                        <div class="browser-dot"></div>
+                                    </div>
+                                    <div class="website-content">
+                                        <div class="website-left-col">
+                                            <div class="website-header">
+                                                <div class="website-logo"><svg id="Layer_2" data-name="Layer 2" style="height: 60px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 383.8 173.62">
+                                                    <g id="Layer_2-2" data-name="Layer 2">
+                                                        <g id="Layer_1-2" data-name="Layer 1-2">
+                                                        <path fill="#2b2b2b" d="M13.02,47.47h8.02c12.56,0,20.44-7.57,20.44-19.72S33.59,7.95,21.04,7.95H0v53.5h13.02v-13.99h0ZM13.02,19.88h7.23c5.39,0,8.09,2.9,8.09,7.87s-2.7,7.8-8.09,7.8h-7.23v-15.67ZM47.53,20.03h12.49v41.43h-12.49V20.03ZM46.15,7.72c0-4.36,3.02-7.72,7.62-7.72s7.63,3.13,7.63,7.49c0,4.59-3.02,7.95-7.63,7.95s-7.62-3.36-7.62-7.72ZM66.72,7.72c0-4.36,3.02-7.72,7.62-7.72s7.63,3.13,7.63,7.49c0,4.59-3.02,7.95-7.63,7.95s-7.62-3.36-7.62-7.72ZM68.1,20.03h12.49v41.43h-12.49V20.03ZM104.91,50.6l-6.84,10.85h-13.54l13.54-20.71-13.15-20.71h14.07l6.31,10.47,6.57-10.47h13.21l-13.15,20.18,13.61,21.25h-14.26l-6.38-10.85h0ZM146.98,62.14c6.77,0,11.77-2.29,15.19-6.73l-6.57-7.95c-2.43,2.45-4.73,3.59-8.22,3.59-4.6,0-7.69-2.45-8.74-6.65h25.9c.07-1.15.2-2.52.2-3.59,0-13.68-8.55-21.48-19.06-21.48-11.24,0-19.59,8.87-19.59,21.32s8.22,21.48,20.9,21.48h0ZM145.73,29.66c3.88,0,6.64,2.75,7.3,7.11h-14.59c.72-4.36,3.42-7.11,7.3-7.11h-.01ZM170.51,4.74h12.49v56.71h-12.49V4.74ZM239.14,34.7c0-16.43-10.45-26.75-25.7-26.75h-21.76v53.5h21.76c15.25,0,25.7-10.32,25.7-26.75ZM204.69,49.38v-29.35h8.22c7.82,0,13.08,5.43,13.08,14.67s-5.26,14.67-13.08,14.67h-8.22,0ZM258.86,49.76h24.06v11.69h-36.94V7.95h36.09v11.69h-23.2v9.02h20.44v11.31h-20.44v9.78h0ZM336.16,7.95l-19.72,53.5h-12.82l-19.65-53.5h14.07l12.49,34.85,12.75-34.85s12.88,0,12.88,0Z"></path>
+                                                        </g>
+                                                        <path fill="#5c16f7" d="M22.26,68.05L0,121.55h5.36l5.84-14.29h27.12l5.84,14.29h5.42l-22.26-53.5h-5.06ZM13.08,102.67l11.68-28.74,11.68,28.74H13.08ZM85.41,89.07c-3.06-5.27-8.35-8.03-14.47-8.03-10.43,0-18.36,7.87-18.36,19.41s7.93,19.57,18.36,19.57c5.98,0,11.2-2.67,14.26-7.8v5.12c0,9.94-4.24,14.6-13.49,14.6-5.63,0-10.92-2.06-14.4-5.5l-2.5,4.13c3.83,3.97,10.36,6.19,17.04,6.19,12.1,0,18.29-6.27,18.29-20.1v-35.31h-4.73v7.72ZM71.43,115.21c-8.07,0-13.84-6.04-13.84-14.75s5.77-14.67,13.84-14.67,13.91,5.96,13.91,14.67-5.84,14.75-13.91,14.75ZM118.18,81.03h-.01c-10.29.01-17.87,8.49-17.87,20.42s7.79,20.48,19.2,20.48c5.77,0,10.85-2.29,14.12-6.57l-2.78-3.52c-2.78,3.52-6.75,5.27-11.2,5.27-8,0-13.84-5.58-14.4-13.99h30.6c0-.61.07-1.22.07-1.68,0-12.08-7.44-20.41-17.73-20.41ZM105.24,99.08c.63-7.87,5.84-13.38,12.94-13.38s12.38,5.5,13.01,13.38h-25.95ZM179.65,98.24h.01s0,23.31,0,23.31h-4.94v-22.78c0-8.48-4.03-12.84-10.99-12.84-7.86,0-12.8,5.35-12.8,14.52v21.1h-4.94v-40.2h4.73v7.41c2.64-4.89,7.58-7.72,13.91-7.72,8.9,0,15.02,5.66,15.02,17.2ZM194.55,101.45c0,9.48,5.84,15.67,13.84,15.67,4.24,0,8.14-1.83,10.64-5.89l3.69,2.75c-2.92,5.2-8.14,7.95-14.33,7.95-10.92,0-18.85-8.48-18.85-20.48s7.93-20.41,18.85-20.41c6.19,0,11.41,2.68,14.33,7.95l-3.69,2.75c-2.5-4.05-6.4-5.96-10.64-5.96-8,0-13.84,6.27-13.84,15.67ZM262.57,81.35l-18.29,45.02c-3.06,7.87-6.96,10.4-12.17,10.4-3.41,0-6.68-1.22-8.9-3.67l2.29-4.05c1.81,1.99,4.03,3.06,6.68,3.06,3.27,0,5.49-1.68,7.58-6.73l1.6-3.9-16.34-40.13h5.15l13.77,34.16,13.77-34.16h4.86ZM257.71,81.35h0s0,0,0,0h0Z"></path>
+                                                    </g>
+                                                </svg></div>
+                                            </div>
+                                            <div class="website-title">Making your business<br><span style="color: #000;">connected </span><svg id="Layer_2" data-name="Layer 2" style="height: 20px; display: ruby;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.99 75.99">
+                                                <g id="Layer_2-2" data-name="Layer 2">
+                                                    <path d="M35.96,6.16l12.45,12.45c.74.74,1.42,1.52,2.02,2.34.34.46.66.93.95,1.4.29.47.57.94.83,1.43,2.11,4.09,2.8,8.72,2.07,13.16-.05.37-.12.75-.21,1.12-.08.37-.16.73-.27,1.07-.93,3.4-2.72,6.61-5.39,9.27s-5.87,4.46-9.27,5.39l-3.99-3.99c-1.18-1.18-2.02-2.59-2.51-4.08,3.43.24,6.93-.94,9.54-3.55s3.79-6.11,3.55-9.54c-.02-.34-.05-.68-.11-1.02-.06-.35-.12-.69-.2-1.04-.52-2.1-1.59-4.09-3.24-5.73l-12.45-12.45c-4.78-4.78-12.56-4.77-17.33,0-4.77,4.77-4.78,12.55,0,17.33l7.7,7.7c-.97,4.3-.69,8.83.85,13-.82-.61-1.6-1.28-2.34-2.02l-12.45-12.45c-8.22-8.22-8.21-21.58,0-29.79,8.21-8.21,21.58-8.22,29.79,0ZM55.89,38.56l7.7,7.7c4.78,4.78,4.77,12.56,0,17.33-4.77,4.77-12.55,4.78-17.33,0l-12.45-12.45c-1.65-1.65-2.72-3.63-3.24-5.73-.08-.35-.14-.69-.2-1.04-.05-.34-.09-.68-.11-1.02-.24-3.43.94-6.93,3.55-9.54s6.11-3.79,9.54-3.55c-.49-1.49-1.33-2.89-2.51-4.08l-3.99-3.99c-3.4.93-6.61,2.72-9.27,5.39s-4.46,5.87-5.39,9.27c-.11.34-.19.7-.27,1.07-.09.37-.16.75-.21,1.12-.74,4.44-.04,9.07,2.07,13.16.26.49.53.96.83,1.43.29.47.61.93.95,1.4.61.82,1.28,1.6,2.02,2.34l12.45,12.45c8.22,8.22,21.58,8.21,29.79,0,8.21-8.21,8.22-21.58,0-29.79l-12.45-12.45c-.74-.74-1.52-1.42-2.34-2.02,1.55,4.17,1.83,8.7.85,13Z"></path>
+                                                </g>
+                                            </svg></div>
+                                            <div class="website-subtitle">Une conception de sites internet<br>simplifiée pour <span style="color: #5c16f7">les hôtels.</span></div>
+                                            <div class="buttons">
+                                                <button class="btn-primary">Book now!</button>
+                                                <button class="btn-secondary">Explore</button>
+                                            </div>
+											<div class="website-img1">
+                                                    <img src="https://i.imgur.com/kjpqMcI.png" alt="Rooftop bar">
+                                                </div>
+                                        </div>
+                                        <div class="website-right-col">
+                                            <div class="right-col-top">
+                                                <div class="website-img" style="height: 160px;">
+                                                    <img src="https://images.unsplash.com/photo-1664346774672-6d2e062e088f?q=80&w=2070&auto=format&fit=crop" alt="Hotel interior">
+                                                </div>
+                                                <div class="website-img" style="height: 160px;">
+                                                     <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=2070&auto=format&fit=crop" alt="Hotel room">
+                                                </div>
+                                            </div>
+                                            <div class="right-col-bottom">
+                                                <div class="website-img" style="height: 260px;">
+                                                    <img src="https://images.unsplash.com/photo-1568495248636-6432b97bd949?q=80&amp;w=1974&amp;auto=format&amp;fit=crop" alt="Rooftop bar">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="laptop__bottom"></div>
+                        <div class="laptop__under"></div>
+                        <div class="laptop__shadow"></div> 
+                    </div>
+                </div>
+            </section>
+			</div>
+    </div>
+
+            <div class="services-wrapper">
+        <div class="container">
+            <section class="services">
+                <div class="pourquoidisplay"><h2 class="services-title"><b>- Pourquoi</b> choisir nos services <b>?</b></h2><img style="height: 40px;" src="https://raw.githubusercontent.com/erictranfe34/comsvg/4fb0e8009f533fe3c23cb6e307a14b328fce23d0/PiixelDev%20Logo%20-%20Black%20White.svg" alt="PiixelDev Logo"></div>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <div class="service-icon"><div class="icon-middle-ring"><svg style="height: 75px" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86.55 93.21">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <path d="M14.98,48.66v-5.67c0-1.38,1.12-2.5,2.5-2.5h5.67c1.38,0,2.5,1.12,2.5,2.5v5.67c0,1.38-1.12,2.5-2.5,2.5h-5.67c-1.38,0-2.5-1.12-2.5-2.5ZM32.79,51.17h5.67c1.38,0,2.5-1.12,2.5-2.5v-5.67c0-1.38-1.12-2.5-2.5-2.5h-5.67c-1.38,0-2.5,1.12-2.5,2.5v5.67c0,1.38,1.12,2.5,2.5,2.5ZM48.1,51.17h5.67c1.38,0,2.5-1.12,2.5-2.5v-5.67c0-1.38-1.12-2.5-2.5-2.5h-5.67c-1.38,0-2.5,1.12-2.5,2.5v5.67c0,1.38,1.12,2.5,2.5,2.5ZM63.4,51.17h5.67c1.38,0,2.5-1.12,2.5-2.5v-5.67c0-1.38-1.12-2.5-2.5-2.5h-5.67c-1.38,0-2.5,1.12-2.5,2.5v5.67c0,1.38,1.12,2.5,2.5,2.5ZM17.48,66.85h5.67c1.38,0,2.5-1.12,2.5-2.5v-5.67c0-1.38-1.12-2.5-2.5-2.5h-5.67c-1.38,0-2.5,1.12-2.5,2.5v5.67c0,1.38,1.12,2.5,2.5,2.5ZM32.79,66.85h5.67c1.38,0,2.5-1.12,2.5-2.5v-5.67c0-1.38-1.12-2.5-2.5-2.5h-5.67c-1.38,0-2.5,1.12-2.5,2.5v5.67c0,1.38,1.12,2.5,2.5,2.5ZM48.1,66.85h5.67c1.38,0,2.5-1.12,2.5-2.5v-5.67c0-1.38-1.12-2.5-2.5-2.5h-5.67c-1.38,0-2.5,1.12-2.5,2.5v5.67c0,1.38,1.12,2.5,2.5,2.5ZM63.4,66.85h5.67c1.38,0,2.5-1.12,2.5-2.5v-5.67c0-1.38-1.12-2.5-2.5-2.5h-5.67c-1.38,0-2.5,1.12-2.5,2.5v5.67c0,1.38,1.12,2.5,2.5,2.5ZM17.48,82.54h5.67c1.38,0,2.5-1.12,2.5-2.5v-5.67c0-1.38-1.12-2.5-2.5-2.5h-5.67c-1.38,0-2.5,1.12-2.5,2.5v5.67c0,1.38,1.12,2.5,2.5,2.5ZM32.79,82.54h5.67c1.38,0,2.5-1.12,2.5-2.5v-5.67c0-1.38-1.12-2.5-2.5-2.5h-5.67c-1.38,0-2.5,1.12-2.5,2.5v5.67c0,1.38,1.12,2.5,2.5,2.5ZM48.1,82.54h5.67c1.38,0,2.5-1.12,2.5-2.5v-5.67c0-1.38-1.12-2.5-2.5-2.5h-5.67c-1.38,0-2.5,1.12-2.5,2.5v5.67c0,1.38,1.12,2.5,2.5,2.5ZM86.55,18.1v67.65c0,4.12-3.34,7.46-7.46,7.46H7.47c-4.13,0-7.47-3.34-7.47-7.46V18.1c0-4.13,3.34-7.47,7.47-7.47h10.91V3.21c0-1.77,1.45-3.21,3.21-3.21s3.21,1.45,3.21,3.21v7.42h36.94V3.21c0-1.77,1.45-3.21,3.21-3.21s3.21,1.45,3.21,3.21v7.42h10.92c4.12,0,7.46,3.34,7.46,7.47ZM59.48,18.95c0,3.02,2.46,5.48,5.48,5.48s5.48-2.46,5.48-5.48c0-1.83-.89-3.44-2.27-4.43v4.35c0,1.77-1.45,3.21-3.21,3.21s-3.21-1.45-3.21-3.21v-4.35c-1.37,1-2.27,2.61-2.27,4.43ZM16.11,18.95c0,3.02,2.46,5.48,5.48,5.48s5.48-2.46,5.48-5.48c0-1.83-.89-3.44-2.27-4.44v4.35c0,1.77-1.45,3.21-3.21,3.21s-3.21-1.45-3.21-3.21v-4.35c-1.37,1-2.27,2.61-2.27,4.43ZM80.55,35.1H6v50.65c0,.81.66,1.46,1.47,1.46h71.62c.81,0,1.46-.65,1.46-1.46v-50.65Z"></path>
+                            </g>
+                        </svg></div></div>
+                        <div class="service-title">- Augmenter les réservations<br>directes</div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"><div class="icon-middle-ring"><svg style="height: 75px" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 100.43">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <path d="M77.34,78.63c-.04-.25.04-.5.22-.68l9.06-8.64c2.26-2.15,3.06-5.33,2.1-8.3s-3.48-5.07-6.57-5.48l-12.41-1.66c-.25-.03-.46-.19-.57-.42l-5.41-11.29c-1.35-2.81-4.12-4.56-7.24-4.56s-5.89,1.75-7.24,4.56l-5.42,11.29c-.11.23-.32.38-.57.42l-12.41,1.66c-3.09.41-5.61,2.51-6.57,5.48-.96,2.97-.16,6.15,2.1,8.3l9.06,8.64c.18.17.26.43.22.67l-2.26,12.32c-.43,2.35.19,4.75,1.72,6.58,1.54,1.85,3.8,2.91,6.19,2.91,1.32,0,2.64-.34,3.82-.97l11.02-5.95c.21-.12.49-.12.71,0l11.02,5.95c1.18.64,2.5.97,3.82.97,2.39,0,4.64-1.06,6.18-2.91,1.52-1.83,2.15-4.22,1.72-6.58l-2.26-12.32ZM72.66,79.48l2.26,12.32c.18.98-.07,1.93-.69,2.68-.98,1.18-2.72,1.54-4.1.8l-11.02-5.95c-.8-.43-1.7-.66-2.61-.66s-1.81.23-2.61.66l-11.02,5.95c-1.37.74-3.11.38-4.1-.8-.63-.75-.87-1.7-.69-2.68l2.26-12.32c.34-1.83-.27-3.69-1.61-4.97l-9.06-8.64c-.92-.88-1.25-2.18-.86-3.39.39-1.21,1.42-2.07,2.69-2.24l12.41-1.66c1.84-.25,3.42-1.4,4.23-3.07l5.42-11.29c.55-1.15,1.69-1.86,2.96-1.86s2.41.71,2.96,1.86l5.42,11.29c.8,1.68,2.38,2.82,4.23,3.07l12.41,1.66c1.26.17,2.29,1.03,2.69,2.24.39,1.21.07,2.51-.86,3.39l-9.06,8.64c-1.35,1.28-1.95,3.14-1.62,4.97ZM27.42,82.58l4.07,2.2-.95,5.16-5.41-2.92-8.17,4.41c-.99.53-2.09.82-3.2.82-2,0-3.89-.89-5.18-2.44-1.28-1.53-1.8-3.54-1.44-5.51l1.67-9.13-6.72-6.41c-1.89-1.8-2.56-4.47-1.76-6.95.81-2.49,2.92-4.25,5.51-4.59l9.2-1.23,4.02-8.38c1.13-2.35,3.46-3.82,6.07-3.82s4.94,1.47,6.07,3.82l2.18,4.56-2.92.39c-.76.1-1.48.28-2.18.52l-1.59-3.31c-.29-.61-.88-.98-1.56-.98s-1.27.37-1.57.98l-4.05,8.45c-.71,1.48-2.1,2.49-3.72,2.7l-9.28,1.25c-.68.09-1.21.53-1.43,1.18-.21.65-.04,1.32.46,1.8l6.78,6.46c1.18,1.13,1.72,2.76,1.42,4.37l-1.69,9.22c-.09.51.04,1.02.37,1.41.52.63,1.43.83,2.17.43l8.24-4.46c.71-.38,1.5-.58,2.3-.58s1.59.2,2.29.58ZM110.91,68.76l-6.73,6.41,1.68,9.13c.36,1.97-.17,3.98-1.44,5.51-1.29,1.55-3.18,2.44-5.18,2.44-1.11,0-2.22-.29-3.2-.82l-8.17-4.41-5.41,2.92-.95-5.16,4.06-2.2c.71-.38,1.5-.58,2.3-.58s1.59.2,2.29.58l8.25,4.46c.74.4,1.65.2,2.17-.43.33-.39.46-.9.36-1.41l-1.68-9.22c-.3-1.61.23-3.24,1.42-4.37l6.78-6.46c.5-.48.67-1.15.45-1.8-.21-.65-.74-1.09-1.42-1.18l-9.29-1.25c-1.62-.21-3.01-1.22-3.71-2.7l-4.06-8.45c-.29-.61-.88-.98-1.56-.98s-1.27.37-1.57.98l-1.59,3.31c-.69-.24-1.42-.42-2.17-.52l-2.92-.39,2.18-4.56c1.13-2.35,3.46-3.82,6.07-3.82s4.94,1.47,6.07,3.82l4.01,8.38,9.2,1.23c2.59.34,4.71,2.1,5.51,4.59.81,2.48.14,5.15-1.75,6.95ZM45.93,10.57c0-5.84,4.73-10.57,10.57-10.57s10.57,4.73,10.57,10.57-4.73,10.57-10.57,10.57-10.57-4.73-10.57-10.57ZM81.36,22.2c0-4.82,3.91-8.73,8.73-8.73s8.73,3.91,8.73,8.73-3.91,8.73-8.73,8.73-8.73-3.91-8.73-8.73ZM14.18,22.2c0-4.82,3.91-8.73,8.73-8.73s8.73,3.91,8.73,8.73-3.91,8.73-8.73,8.73-8.73-3.91-8.73-8.73ZM35.25,45.67c-.51-1.07-1.18-2.04-1.97-2.87.88-2.32,3.02-8.27,3.58-12.95.71-5.96,8.5-6.38,12.47-5.67,3.97.71,7.17.71,7.17.71,0,0,3.2,0,7.17-.71,3.97-.71,11.76-.29,12.47,5.67.56,4.68,2.7,10.63,3.58,12.95-.79.83-1.46,1.8-1.98,2.87l-2.81,5.87-3.6-.48-4.88-10.19c-1.86-3.86-5.67-6.26-9.95-6.26s-8.1,2.4-9.95,6.26l-4.89,10.19-3.59.48-2.82-5.87ZM5.25,52.76c-.78.1-1.53.29-2.25.54,1.07-5.09,3.93-17.19,7.2-18.69,4.16-1.9,10.11,0,13.41,0s7.76-.94,7.76-.94l-1.95,6.47c-1.33-.56-2.78-.85-4.29-.85-4.36,0-8.24,2.45-10.13,6.38l-2.96,6.18-6.79.91ZM102.8,34.61c3.27,1.5,6.13,13.6,7.2,18.69-.72-.25-1.47-.44-2.25-.54l-6.79-.91-2.96-6.18c-1.89-3.93-5.77-6.38-10.13-6.38-1.51,0-2.96.29-4.29.85l-1.95-6.47s4.46.94,7.76.94,9.25-1.9,13.41,0Z"></path>
+                            </g>
+                        </svg></div></div>
+                        <div class="service-title">- Améliorer l'expérience<br>des clients</div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"><div class="icon-middle-ring"><svg style="height: 75px" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111.69 102.76">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <path d="M111.69,51.5c0,25.39-18.38,46.47-42.55,50.71l-.33-12.17c17.65-3.94,30.88-19.72,30.88-38.54,0-21.78-17.72-39.5-39.5-39.5-19.16,0-35.17,13.72-38.75,31.84h7.85l-14.65,24.38L0,43.84h9.26C12.96,19.03,34.35,0,60.19,0c28.44,0,51.5,23.06,51.5,51.5ZM17.38,90.25c.78-.8,1.5-1.58,2.15-2.34.65-.76,1.18-1.57,1.59-2.44.41-.87.61-1.88.61-3.04,0-2.19-.78-3.9-2.34-5.13-1.56-1.24-3.94-1.86-7.13-1.86-2.34,0-4.22.32-5.64.97-1.42.65-2.44,1.56-3.08,2.73-.63,1.17-.95,2.57-.95,4.2v.94h5.22v-.9c0-.87.13-1.68.39-2.44.26-.76.73-1.37,1.42-1.84.68-.47,1.64-.7,2.88-.7,1.46,0,2.49.36,3.08,1.07.58.71.88,1.69.88,2.94,0,1-.2,1.89-.61,2.66-.41.77-.93,1.5-1.56,2.19-.63.69-1.33,1.44-2.07,2.24l-10.05,10.74v2.54h18.64v-3.01h-12.49l9.08-9.5ZM37,92.32h4.44v3.18h-4.44v7.26h-4.98v-7.26h-11.47v-3.75l10.3-16.09h6.15v16.66ZM32.02,80.01l-6.44,12.31h6.44v-12.31ZM59.82,83.76c-.6-.4-1.46-.6-2.56-.6-1.43,0-2.73.22-3.9.67-1.17.45-2.23.98-3.17,1.61v-9.77h-5.22v27.09h5.22v-15.52c.58-.36,1.21-.66,1.88-.9.67-.25,1.31-.37,1.93-.37.91,0,1.51.19,1.81.57.29.38.44.92.44,1.61v14.62h5.22v-15.65c0-.62-.12-1.24-.37-1.84-.24-.6-.67-1.1-1.27-1.5ZM58.58,26.03v-8.79c0-1.49-1.2-2.69-2.69-2.69s-2.69,1.2-2.69,2.69v8.79c0,1.49,1.2,2.69,2.69,2.69s2.69-1.2,2.69-2.69ZM84.5,59.88h8.79c1.49,0,2.69-1.2,2.69-2.69s-1.2-2.69-2.69-2.69h-8.79c-1.49,0-2.69,1.2-2.69,2.69s1.2,2.69,2.69,2.69ZM82.54,32.01c.83-1.43-.73-3.08-2.18-2.29-10.19,5.5-23.67,18.82-24.42,19.57-4.94-4.96-9.58-7.29-12.47-8.36-1.31-.49-2.61.79-2.12,2.1,3.34,8.95,11.86,18.56,14.54,18.39,2.98-.19,4.96-1.13,14.48-12.28,5.75-6.73,9.84-13.12,12.17-17.13Z"></path>
+                            </g>
+                        </svg></div></div>
+                        <div class="service-title">- Être disponible 24h/7j pour<br>les réservations</div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"><div class="icon-middle-ring"><svg style="height: 75px" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.78 102.57">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <g>
+                                <path d="M10.78,77.33c-2.08,0-3.78-1.69-3.78-3.77V30.51h66.89v26.44c2.5.66,4.86,1.68,7,3V19.51c0-5.95-4.83-10.77-10.78-10.77h-1.77v4.93c0,4.56-3.71,8.27-8.26,8.27h-5.39c-4.56,0-8.26-3.71-8.26-8.27v-4.93h-11.96v4.93c0,4.56-3.71,8.27-8.27,8.27h-5.38c-4.56,0-8.27-3.71-8.27-8.27v-4.93h-1.77C4.83,8.74,0,13.56,0,19.51v54.05c0,5.94,4.83,10.77,10.78,10.77h30.64c-.07-.74-.1-1.49-.1-2.25,0-1.62.15-3.21.44-4.75H10.78Z"></path>
+                                <path d="M27.26,38.12c0-.78-.63-1.42-1.41-1.42h-9.92c-.79,0-1.42.64-1.42,1.42v5.25c0,.78.63,1.41,1.42,1.41h9.92c.78,0,1.41-.63,1.41-1.41v-5.25Z"></path>
+                                <rect x="34.07" y="36.7" width="12.75" height="8.08" rx="1.41" ry="1.41"></rect>
+                                <path d="M66.38,38.12c0-.78-.63-1.42-1.41-1.42h-9.93c-.78,0-1.41.64-1.41,1.42v5.25c0,.78.63,1.41,1.41,1.41h9.93c.78,0,1.41-.63,1.41-1.41v-5.25Z"></path>
+                                <path d="M27.26,51.09c0-.78-.63-1.42-1.41-1.42h-9.92c-.79,0-1.42.64-1.42,1.42v5.24c0,.79.63,1.42,1.42,1.42h9.92c.78,0,1.41-.63,1.41-1.42v-5.24Z"></path>
+                                <path d="M45.41,49.67h-9.93c-.78,0-1.41.64-1.41,1.42v5.24c0,.79.63,1.42,1.41,1.42h9.93c.78,0,1.41-.63,1.41-1.42v-5.24c0-.78-.63-1.42-1.41-1.42Z"></path>
+                                <path d="M64.97,49.67h-9.93c-.78,0-1.41.64-1.41,1.42v5.24c0,.79.63,1.42,1.41,1.42h9.93c.78,0,1.41-.63,1.41-1.42v-5.24c0-.78-.63-1.42-1.41-1.42Z"></path>
+                                <path d="M25.85,62.64h-9.92c-.79,0-1.42.64-1.42,1.42v5.24c0,.79.63,1.42,1.42,1.42h9.92c.78,0,1.41-.63,1.41-1.42v-5.24c0-.78-.63-1.42-1.41-1.42Z"></path>
+                                <path d="M45.41,62.64h-9.93c-.78,0-1.41.64-1.41,1.42v5.24c0,.79.63,1.42,1.41,1.42h9.93c.78,0,1.41-.63,1.41-1.42v-5.24c0-.78-.63-1.42-1.41-1.42Z"></path>
+                                <rect x="18.05" width="10.91" height="16.44" rx="2.76" ry="2.76"></rect>
+                                <rect x="51.93" width="10.91" height="16.44" rx="2.76" ry="2.76"></rect>
+                                <path d="M67.3,61.61c-11.31,0-20.48,9.17-20.48,20.48s9.17,20.48,20.48,20.48,20.48-9.17,20.48-20.48-9.17-20.48-20.48-20.48ZM76.31,87.35c0,2.31-.75,4.03-2.26,5.18-1.11.85-2.64,1.38-4.59,1.6v2.78h-3.75v-2.74c-.63-.06-1.25-.16-1.85-.3-1.06-.26-2.05-.64-2.97-1.15-.92-.51-1.79-1.14-2.6-1.91l2.52-2.72c.88.95,1.86,1.66,2.93,2.14s2.24.71,3.5.71c1.74,0,3.04-.31,3.89-.92.86-.61,1.29-1.53,1.29-2.75v-.02c0-.85-.23-1.51-.69-1.97s-1.06-.8-1.82-1.03c-.75-.22-1.58-.41-2.47-.55-.92-.15-1.85-.33-2.8-.53-.95-.2-1.82-.52-2.62-.94-.8-.43-1.44-1.05-1.92-1.86-.48-.81-.73-1.91-.73-3.29v-.02c0-2.38.73-4.17,2.19-5.36,1.02-.84,2.41-1.37,4.15-1.62v-2.82h3.75v2.73c.83.08,1.64.23,2.45.47,1.24.36,2.47.9,3.68,1.62l-2.26,2.77c-.89-.55-1.78-.95-2.64-1.22-.87-.27-1.73-.4-2.57-.4-1.63,0-2.84.3-3.65.89s-1.2,1.49-1.2,2.68v.02c0,.9.27,1.58.8,2.04.53.46,1.23.81,2.09,1.03.86.22,1.78.43,2.76.63.88.17,1.76.38,2.63.63.87.25,1.66.6,2.39,1.07.72.47,1.3,1.11,1.73,1.92.43.81.64,1.86.64,3.17v.03Z"></path>
+                                </g>
+                            </g>
+                        </svg></div></div>
+                        <div class="service-title">- Avoir des réservations sans<br>commission</div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"><div class="icon-middle-ring"><svg style="height: 75px; margin-bottom: 5px" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.13 127.4">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <path d="M98.13,24.38h-9.5v47.59h-8.7c-.65-2.02-1.47-3.98-2.45-5.86l3.93-3.93c2.73-2.73,2.73-7.18,0-9.91l-6.28-6.28c-2.73-2.73-7.18-2.73-9.9,0l-2.11,2.11v-23.72h-9.49L75.74,0l22.39,24.38ZM87.97,78.98v8.88c0,1.38-1.12,2.5-2.5,2.5h-8.88s-.07,0-.11-.01c-.86,4.02-2.46,7.78-4.63,11.12.04.03.07.05.11.09l6.28,6.28c.98.98.98,2.56,0,3.54l-6.28,6.28c-.98.98-2.56.98-3.54,0l-6.28-6.28s-.07-.09-.1-.13c-3.34,2.16-7.09,3.74-11.11,4.59,0,.06.02.11.02.17v8.88c0,1.38-1.12,2.5-2.5,2.5h-8.88c-1.38,0-2.5-1.12-2.5-2.5v-8.88c0-.07.02-.14.02-.21-4-.86-7.73-2.45-11.06-4.62-.05.07-.1.14-.16.2l-6.28,6.28c-.98.98-2.56.98-3.54,0l-6.28-6.28c-.98-.98-.98-2.56,0-3.54l6.28-6.28c.07-.07.14-.12.22-.18-2.15-3.32-3.73-7.05-4.58-11.05-.09.01-.18.03-.27.03H2.5c-1.38,0-2.5-1.12-2.5-2.5v-8.88c0-1.38,1.12-2.5,2.5-2.5h8.88c.09,0,.18.02.27.03.85-4,2.43-7.72,4.58-11.05-.07-.06-.15-.11-.22-.18l-6.28-6.28c-.98-.98-.98-2.56,0-3.54l6.28-6.28c.98.98,2.56.98,3.54,0l6.28,6.28c.06.06.11.13.16.2,3.32-2.17,7.05-3.76,11.05-4.62,0-.07-.02-.14-.02-.21v-8.88c0-1.38,1.12-2.5,2.5-2.5h8.88c1.38,0,2.5,1.12,2.5,2.5v8.88c0,.06-.01.12-.02.17,4.02.85,7.77,2.43,11.11,4.59.04-.04.06-.09.1-.13l6.28-6.28c.98.98,2.56.98,3.54,0l6.28,6.28c.98.98.98,2.56,0,3.54l-6.28,6.28s-.07.06-.11.09c2.18,3.34,3.77,7.09,4.63,11.12.04,0,.07-.01.11-.01h8.88c1.38,0,2.5,1.12,2.5,2.5ZM60.21,83.42c0-8.91-7.23-16.14-16.14-16.14s-16.14,7.23-16.14,16.14,7.23,16.14,16.14,16.14,16.14-7.23,16.14-16.14Z"></path>
+                            </g>
+                        </svg></div></div>
+                        <div class="service-title">- Améliorer la valeur de votre<br>marque</div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon"><div class="icon-middle-ring"><svg style="height: 75px" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80.32 84.57">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <path d="M10.02,59.06l-7.75-8.13,27.54-27.35,9.73,9.73,26.22-26.22-3.59-3.59,18.14-3.5-3.12,18.52-3.87-3.87-33.26,33.26-9.45-9.45-20.6,20.6ZM57.54,84.57h22.77v-45.35h-22.77v45.35ZM28.77,84.57h22.77v-31.18h-22.77v31.18ZM0,84.57h22.77v-21.4H0v21.4Z"></path>
+                            </g>
+                        </svg></div></div>
+                        <div class="service-title">- Augmenter vos ventes des<br>services supplémentaires</div>
+                    </div>
+                </div>
+                 <h4 style="text-align: center; font-size: 12px; color: #000;">Ameliorez votre presence en ligne, augmentez vos ventes directes,<b style="color: #fff;"> Commencez aujourd'hui!</b></h4>
+            </section>
+        </div>
+    </div>
+			
+        
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 >Les Réservations <div><svg class="svgreservations" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86.55 93.21">
+  <g id="Layer_1-2">
+    <path class="st0xxxx4" d="M15,48.7v-5.7c0-1.4,1.1-2.5,2.5-2.5h5.7c1.4,0,2.5,1.1,2.5,2.5v5.7c0,1.4-1.1,2.5-2.5,2.5h-5.7c-1.4,0-2.5-1.1-2.5-2.5ZM32.8,51.2h5.7c1.4,0,2.5-1.1,2.5-2.5v-5.7c0-1.4-1.1-2.5-2.5-2.5h-5.7c-1.4,0-2.5,1.1-2.5,2.5v5.7c0,1.4,1.1,2.5,2.5,2.5ZM48.1,51.2h5.7c1.4,0,2.5-1.1,2.5-2.5v-5.7c0-1.4-1.1-2.5-2.5-2.5h-5.7c-1.4,0-2.5,1.1-2.5,2.5v5.7c0,1.4,1.1,2.5,2.5,2.5ZM63.4,51.2h5.7c1.4,0,2.5-1.1,2.5-2.5v-5.7c0-1.4-1.1-2.5-2.5-2.5h-5.7c-1.4,0-2.5,1.1-2.5,2.5v5.7c0,1.4,1.1,2.5,2.5,2.5ZM17.5,66.8h5.7c1.4,0,2.5-1.1,2.5-2.5v-5.7c0-1.4-1.1-2.5-2.5-2.5h-5.7c-1.4,0-2.5,1.1-2.5,2.5v5.7c0,1.4,1.1,2.5,2.5,2.5ZM32.8,66.8h5.7c1.4,0,2.5-1.1,2.5-2.5v-5.7c0-1.4-1.1-2.5-2.5-2.5h-5.7c-1.4,0-2.5,1.1-2.5,2.5v5.7c0,1.4,1.1,2.5,2.5,2.5ZM48.1,66.8h5.7c1.4,0,2.5-1.1,2.5-2.5v-5.7c0-1.4-1.1-2.5-2.5-2.5h-5.7c-1.4,0-2.5,1.1-2.5,2.5v5.7c0,1.4,1.1,2.5,2.5,2.5ZM63.4,66.8h5.7c1.4,0,2.5-1.1,2.5-2.5v-5.7c0-1.4-1.1-2.5-2.5-2.5h-5.7c-1.4,0-2.5,1.1-2.5,2.5v5.7c0,1.4,1.1,2.5,2.5,2.5ZM17.5,82.5h5.7c1.4,0,2.5-1.1,2.5-2.5v-5.7c0-1.4-1.1-2.5-2.5-2.5h-5.7c-1.4,0-2.5,1.1-2.5,2.5v5.7c0,1.4,1.1,2.5,2.5,2.5ZM32.8,82.5h5.7c1.4,0,2.5-1.1,2.5-2.5v-5.7c0-1.4-1.1-2.5-2.5-2.5h-5.7c-1.4,0-2.5,1.1-2.5,2.5v5.7c0,1.4,1.1,2.5,2.5,2.5ZM48.1,82.5h5.7c1.4,0,2.5-1.1,2.5-2.5v-5.7c0-1.4-1.1-2.5-2.5-2.5h-5.7c-1.4,0-2.5,1.1-2.5,2.5v5.7c0,1.4,1.1,2.5,2.5,2.5ZM86.6,18.1v67.6c0,4.1-3.3,7.5-7.5,7.5H7.5c-4.1,0-7.5-3.3-7.5-7.5V18.1c0-4.1,3.3-7.5,7.5-7.5h10.9V3.2c0-1.8,1.5-3.2,3.2-3.2s3.2,1.5,3.2,3.2v7.4h36.9V3.2c0-1.8,1.5-3.2,3.2-3.2s3.2,1.5,3.2,3.2v7.4h10.9c4.1,0,7.5,3.3,7.5,7.5h0ZM59.5,19c0,3,2.5,5.5,5.5,5.5s5.5-2.5,5.5-5.5-.9-3.4-2.3-4.4v4.4c0,1.8-1.4,3.2-3.2,3.2s-3.2-1.5-3.2-3.2v-4.4c-1.4,1-2.3,2.6-2.3,4.4ZM16.1,19c0,3,2.5,5.5,5.5,5.5s5.5-2.5,5.5-5.5-.9-3.4-2.3-4.4v4.4c0,1.8-1.5,3.2-3.2,3.2s-3.2-1.5-3.2-3.2v-4.4c-1.4,1-2.3,2.6-2.3,4.4h0ZM80.6,35.1H6v50.7c0,.8.7,1.5,1.5,1.5h71.6c.8,0,1.5-.7,1.5-1.5v-50.7Z"/>
+  </g>
+</svg></div></h1>
+                    <p>Les réservations directes sont importantes, voici comment!</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-circle" style="--percentage: 237.6deg;">
+                                <div class="icon-middle-ring-stats"><div class="stat-number">66%</div>
+                            </div></div>
+                            <div class="stat-text">- des clients qui préfèrent de réserver directement auprès des hôtels</div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-circle" style="--percentage: 219.6deg;">
+                                <div class="stat-number">61%</div>
+                            </div>
+                            <div class="stat-text">- des réservations en ligne se font directement sur les sites web des hôtels</div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-circle" style="--percentage: 187.2deg;">
+                                <div class="stat-number">52%</div>
+                            </div>
+                            <div class="stat-text">- des voyageurs visitent votre site web après vous avoir vu sur les OTA</div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-circle" style="--percentage: 176.4deg;">
+                                <div class="stat-number">49%</div>
+                            </div>
+                            <div class="stat-text">- des clients utilisent leur téléphones, tablettes pour réserver en ligne</div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-circle" style="--percentage: 266.4deg;">
+                                <div class="stat-number">74%</div>
+                            </div>
+                            <div class="stat-text">- des clients explorent leurs prochaines destinations depuis leur téléphones</div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-circle" style="--percentage: 338.4deg;">
+                                <div class="stat-number">94%</div>
+                            </div>
+                            <div class="stat-text">- des clients sont susceptibles de réserver directement si les hôtels proposent des offres spéciales</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="phone-header">
+                            <div style="font-weight: bold; color: #1f2937;">Localisation<br><span style="font-size: 12px; opacity: 0.7;">Rabat, Morocco</span></div>
+                        </div>
+                        <div class="phone-content">
+                            <div class="hotel-card">
+                                <div class="hotel-image1"></div>
+                                <div class="hotel-info">
+                                    <div class="hotel-name">Hôtel Moderne</div>
+                                    <div class="hotel-price">€440/nuit</div>
+                                </div>
+                            </div>
+                            <div class="hotel-card">
+                                <div class="hotel-image2"></div>
+                                <div class="hotel-info">
+                                    <div class="hotel-name">Resort Premium</div>
+                                    <div class="hotel-price">€310/nuit</div>
+                                </div>
+                            </div>
+                            <div class="hotel-card">
+                                <div class="hotel-image3"></div>
+                                <div class="hotel-info">
+                                    <div class="hotel-name">Moroccan Riad</div>
+                                    <div class="hotel-price">€170/nuit</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <div class="features-title">
+                <h2>Personnaliser votre siteweb<br>comme un PRO.</h2>
+            </div>
+            
+            <div class="features-grid" style="transform: translateY(0px); opacity: 1; transition: 0.6s; background: #ddd;
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+			">
+                <div class="feature-card">
+                    <div class="feature-number">01</div>
+                    <div class="feature-title">Configuration rapide<br>et facile</div>
+					
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-number">02</div>
+                    <div class="feature-title">Large sélection des<br>designs</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-number">03</div>
+                    <div class="feature-title">Moteur de réservation<br>intégré</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-number">04</div>
+                    <div class="feature-title">Personnalisations et<br>intégration faciles</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-number">05</div>
+                    <div class="feature-title">3 mois de support<br>gratuitement</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-number">06</div>
+                    <div class="feature-title">Minimiser vos coûts<br>mensuels</div>
+                </div>
+            </div>
+			<div class="gallery js-flickity" style="left: 0px; transform: translateX(0%);">
+  <div class="gallery-cell"><img src="https://i.imgur.com/KzFB6va.png"></div>
+</div>
+
+    </section>
+
+    <section class="design-showcase">
+        <div class="container">
+            
+            
+            <div class="bg-white-100 p-4 sm:p-6 md:p-8">
+        <div class="max-w-6xl mx-auto">
+<div class="showcase-title">
+                <h2>THE HOTEL DESIGN<svg style="height: 50px" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.35 87.47">
+  <g id="Layer_2-2" data-name="Layer 2">
+    <path class="st0xxxx5" d="M93.13,77.84V29.12h-9.64V3.57c0-1.97-1.6-3.57-3.57-3.57H8.79c-1.97,0-3.57,1.6-3.57,3.57v74.27H0v9.64h98.35v-9.64h-5.22ZM44.35,77.84H14.86V9.64h58.99v19.49h-29.5v48.71ZM83.49,77.84h-9.88v-29.1h-9.64v29.1h-9.98v-39.08h29.5v39.08ZM23.78,18.34h10.32v10.32h-10.32v-10.32ZM23.78,37.78h10.32v10.32h-10.32v-10.32ZM23.78,57.21h10.32v10.32h-10.32v-10.32Z"/>
+  </g>
+</svg></h2>
+                <p>- Large sélection des designs</p>
+            </div>
+            <main class="flex flex-col md:flex-row gap-4 md:gap-6">
+
+                <!-- Left Column: Contains the first set of blocks -->
+                <div class="flex flex-col gap-4 md:gap-6 w-full md:w-[58%]">
+                    <!-- Block 1 -->
+                    <div class="bg-white rounded-2xl shadow-md overflow-hidden h-[435px]">
+                        <img src="https://i.imgur.com/8P1rXOj.jpeg" 
+                             alt="Layout block 1, landscape orientation" 
+                             class="img-cover"
+                             onerror="this.onerror=null;this.src='https://placehold.co/545x435/f87171/ffffff?text=Image+Failed';">
+                    </div>
+                    <!-- Block 3 -->
+                    <div class="bg-white rounded-2xl shadow-md overflow-hidden h-[677px]">
+                        <img src="https://i.imgur.com/fGJ6RVV.jpeg" 
+                             alt="Layout block 3, portrait orientation" 
+                             class="img-cover"
+                             onerror="this.onerror=null;this.src='https://placehold.co/545x677/f87171/ffffff?text=Image+Failed';">
+                    </div>
+                    <!-- Block 4 -->
+                    <div class="bg-white rounded-2xl shadow-md overflow-hidden h-[271px]">
+                        <img src="https://i.imgur.com/51u9bb4.jpeg" 
+                             alt="Layout block 4, wide landscape orientation" 
+                             class="img-cover"
+                             onerror="this.onerror=null;this.src='https://placehold.co/545x271/f87171/ffffff?text=Image+Failed';">
+                    </div>
+                </div>
+
+                <!-- Right Column: Contains the second set of blocks -->
+                <div class="flex flex-col gap-4 md:gap-6 w-full md:w-[42%]">
+                    <!-- Block 2 -->
+                    <div class="bg-white rounded-2xl shadow-md overflow-hidden h-[751px]">
+                        <img src="https://i.imgur.com/4MSkooM.jpeg" 
+                             alt="Layout block 2, tall portrait orientation" 
+                             class="img-cover"
+                             onerror="this.onerror=null;this.src='https://placehold.co/413x751/f87171/ffffff?text=Image+Failed';">
+                    </div>
+                    <!-- Block 5 -->
+                    <div class="bg-white rounded-2xl shadow-md overflow-hidden h-[286px]">
+                        <img src="https://i.imgur.com/0sLThGp.jpeg" 
+                             alt="Layout block 5, landscape orientation" 
+                             class="img-cover"
+                             onerror="this.onerror=null;this.src='https://placehold.co/413x286/f87171/ffffff?text=Image+Failed';">
+                    </div>
+                    <!-- Block 6 -->
+                    <div class="bg-white rounded-2xl shadow-md overflow-hidden h-[349px]">
+                        <img src="https://i.imgur.com/oVvAHfv.jpeg" 
+                             alt="Layout block 6, squarish orientation" 
+                             class="img-cover"
+                             onerror="this.onerror=null;this.src='https://placehold.co/413x349/f87171/ffffff?text=Image+Failed';">
+                    </div>
+					<div style="text-align: right;">
+                <p style="font-size: 2rem; opacity: 0.8;"><b style="color: #8123fd;">+</b> <b>16</b> demos</p>
+                <p style="opacity: 0.6;">À choisir</p>
+            </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+            
+            
+        </div>
+    </section>
+
+    <div class="container">
+        <header class="formula-header animated">
+            <h1>Notre Formule 
+<svg class="st0xxxx6" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 194.46 274.4">
+  <g id="Layer_1-2" data-name="Layer 1">
+    <path class="st0xxxx6" d="M155.34,41.39V0H0v236.41h115.33v-7.6c-12.84-7.8-21.44-21.92-21.44-38.02,0-25.12,20.95-45.44,46.28-44.41,22.51.92,41.01,18.91,42.51,41.39,1.15,17.34-7.7,32.76-21.34,41.04v7.61h33.12V41.39h-39.12ZM117.36,131.32H35.72v-14.37h81.64v14.37ZM157.61,90.08H35.72v-14.38h121.89v14.38ZM160.85,215.52c-.07.06-.13.12-.2.18-.14.13-.28.26-.42.38-.09.08-.19.14-.28.22-.64.54-1.29,1.07-1.97,1.56-.03.02-.06.04-.08.06-.76.55-1.54,1.06-2.35,1.55,0,0,0,0,0,0,0,0,0,0,0,0-.27.16-.55.32-.83.48-.06.03-.11.07-.17.1-.09.05-.18.1-.28.15-.29.16-.57.31-.87.46-.32.16-.64.31-.96.47-.15.07-.29.14-.44.21-.5.23-1.01.44-1.53.64-.07.03-.13.05-.2.07-.39.15-.78.29-1.17.43-.05.02-.1.03-.14.05-.14.05-.29.09-.43.14-.09.03-.18.06-.27.09-.22.07-.43.14-.65.2-.04.01-.07.02-.11.03-.08.02-.17.04-.25.07-.13.04-.26.07-.38.1-.12.03-.23.06-.35.09-.25.07-.5.12-.75.17-.18.04-.37.09-.55.13-.05,0-.09.02-.14.03-.33.07-.66.13-.99.19-.12.02-.23.03-.35.05-.17.03-.35.05-.52.08-.24.04-.47.07-.71.1-.18.02-.35.04-.53.06-.1.01-.19.02-.29.03-.08,0-.17.02-.25.03-.17.01-.35.03-.53.04-.06.01-.13.01-.2.01-.12.01-.25.01-.38.02-.17,0-.33.02-.5.03-.03,0-.06,0-.1,0-.46.02-.93.03-1.4.03-.05,0-.09,0-.14,0-.14,0-.29,0-.43,0-.28,0-.56,0-.83-.02-.13,0-.26-.02-.4-.02-.11,0-.22,0-.33-.01-.11,0-.22-.02-.34-.03-.04,0-.08,0-.11,0-.18-.01-.36-.03-.53-.04-.12,0-.23-.03-.35-.04-.17-.02-.35-.04-.52-.06-.07,0-.14-.01-.2-.02-.15-.02-.29-.04-.44-.06-.26-.04-.53-.07-.79-.12-.12-.02-.23-.03-.35-.05-.33-.06-.66-.12-.99-.19-.18-.04-.35-.07-.53-.12-.3-.06-.61-.13-.91-.21-.33-.08-.66-.17-.98-.26-.04-.01-.07-.02-.11-.03-.22-.06-.43-.13-.65-.2-.28-.08-.56-.17-.84-.27-1.81-.61-3.55-1.38-5.21-2.29-.38-.2-.74-.41-1.11-.63-.22-.13-.44-.26-.67-.41-.32-.2-.64-.4-.95-.62-.23-.15-.46-.31-.69-.48-.21-.15-.42-.3-.62-.45-.31-.23-.62-.47-.93-.72-.32-.25-.62-.51-.92-.77-1.29-1.11-2.49-2.32-3.6-3.62-.2-.23-.4-.47-.59-.71-.09-.11-.17-.22-.26-.33-.17-.21-.33-.42-.49-.64-.16-.21-.32-.43-.47-.65-.68-.96-1.32-1.96-1.9-2.99-.18-.32-.36-.64-.52-.97-.23-.44-.45-.88-.65-1.32-.12-.24-.22-.48-.33-.72-.14-.31-.27-.63-.39-.95-.04-.09-.07-.18-.1-.26-.09-.22-.17-.43-.25-.65-.14-.37-.27-.75-.39-1.13-.1-.28-.18-.56-.27-.85-.12-.43-.24-.85-.35-1.28-.06-.23-.11-.46-.16-.68-.02-.09-.03-.18-.05-.27-.11-.48-.2-.97-.29-1.46,0-.04-.02-.08-.02-.12,0-.03-.01-.06-.02-.1-.05-.32-.1-.63-.14-.95-.03-.19-.06-.39-.08-.58,0,0,0-.01,0-.02-.05-.39-.08-.78-.12-1.17,0,0,0,0,0,0-.02-.1-.02-.2-.03-.31,0-.03,0-.06,0-.09,0-.09-.02-.17-.02-.26,0-.12,0-.25-.01-.37,0-.16-.02-.32-.03-.48,0-.22,0-.44-.01-.66,0-.17-.01-.35-.01-.52,0-.06,0-.13,0-.19,0-.32.02-.64.02-.96,0-.22,0-.44.02-.66.02-.45.06-.9.1-1.35.01-.14.02-.28.03-.42.06-.59.13-1.17.22-1.74.02-.14.05-.28.08-.42.07-.43.15-.86.24-1.29.04-.21.1-.41.14-.62.08-.36.16-.71.25-1.06.06-.23.13-.45.19-.67.09-.33.19-.65.29-.98.07-.23.15-.46.23-.69.11-.31.21-.62.33-.92.09-.23.18-.46.27-.69.12-.3.24-.59.37-.88.1-.23.2-.46.31-.68.13-.29.27-.57.41-.85.11-.22.23-.45.34-.67.15-.28.3-.55.45-.83.12-.22.24-.43.37-.64.16-.27.33-.54.5-.81.13-.21.26-.41.39-.62.18-.27.36-.53.55-.8.14-.19.27-.39.41-.58.2-.27.41-.53.61-.8.14-.18.27-.35.41-.53.23-.28.47-.55.71-.83.13-.15.25-.3.38-.44.32-.36.66-.71,1-1.05.05-.05.1-.11.15-.16.39-.39.8-.78,1.21-1.15.13-.11.26-.22.39-.34.29-.26.58-.51.88-.76.17-.14.34-.26.5-.4.27-.21.54-.43.82-.63.19-.14.38-.27.57-.4.27-.19.53-.38.81-.56.2-.13.41-.26.61-.39.27-.17.54-.34.81-.5.21-.13.43-.25.64-.37.27-.15.55-.31.83-.45.22-.12.44-.23.67-.34.28-.14.56-.28.85-.41.23-.11.46-.21.69-.31.29-.13.58-.25.88-.37.23-.09.46-.19.7-.28.3-.11.61-.22.91-.33.23-.08.47-.16.7-.24.32-.1.64-.19.96-.29.23-.07.46-.14.69-.2.34-.09.68-.17,1.02-.24.22-.05.44-.11.67-.15.38-.08.77-.15,1.16-.21.18-.03.37-.07.55-.1.58-.09,1.16-.16,1.74-.22.05,0,.1,0,.15-.01.54-.05,1.08-.09,1.62-.12.2,0,.41,0,.61-.02.34-.01.68-.03,1.03-.03.05,0,.1,0,.15,0,.24,0,.48.01.72.02.36,0,.72.02,1.08.04.07,0,.15,0,.22,0,.28.02.55.05.83.07.18.02.36.03.53.05.4.04.79.09,1.19.15.15.02.29.04.44.06.38.06.75.13,1.12.2,13.42,2.55,23.99,13.11,26.56,26.51.08.39.15.79.21,1.19.02.14.04.27.06.41.06.4.11.8.15,1.21.02.17.03.35.05.53.02.27.05.55.07.82,0,.08,0,.16,0,.23.02.35.03.71.04,1.06,0,.24.02.49.02.73,0,.05,0,.11,0,.16,0,.46-.01.92-.03,1.37,0,.02,0,.03,0,.05,0,.17-.02.33-.03.5-.01.22-.02.44-.04.66-.01.11-.01.21-.03.31,0,.03,0,.05,0,.08-.02.28-.05.55-.08.83-.01.1-.02.19-.03.29-.03.29-.07.57-.12.86-.02.16-.05.32-.07.48-.02.1-.03.2-.05.29-.02.12-.05.23-.07.34-.08.43-.16.86-.26,1.28-.02.08-.03.15-.05.23-.05.22-.1.45-.16.68-.03.12-.07.24-.1.36-.02.08-.04.15-.06.23-.06.23-.12.46-.19.69-.09.28-.16.54-.26.81-.03.08-.06.16-.08.25-.1.31-.2.62-.32.92-.04.12-.09.24-.14.36-.05.12-.09.24-.14.36-.02.06-.04.12-.07.18-.12.32-.25.64-.39.95-.05.1-.09.2-.14.3,0,.01-.01.03-.02.04-.06.13-.11.25-.17.38-.1.23-.23.46-.34.69-.1.2-.19.39-.29.59,0,.01-.01.03-.02.04-.16.33-.34.65-.52.97-.04.08-.1.16-.14.24-.14.25-.3.5-.45.74-.14.23-.28.47-.43.7-.19.29-.39.58-.58.87-.1.15-.2.3-.3.44-.06.08-.12.16-.18.24-.04.05-.07.1-.11.15-.06.09-.12.17-.19.26-.16.22-.32.43-.49.64-.09.11-.17.22-.26.33-.19.24-.39.48-.59.71-.18.2-.36.4-.54.61-.04.04-.07.08-.11.12-.07.08-.14.16-.21.24-.27.29-.55.58-.83.87-.05.04-.09.09-.13.13-.27.27-.55.54-.84.81-.1.09-.2.18-.3.27ZM191.24,33.81h-28.91V3.22l28.91,30.59ZM138.33,235.24c6.02,0,11.77-1.2,17.01-3.39v42.55l-17.01-11-17,11v-42.55c5.24,2.19,10.98,3.39,17,3.39Z"/>
+  </g>
+</svg>
+</h1>
+            <p>Système de réservation premium + extras</p>
+            <p style="color: #000; font-size: 15px;">+5000dh comme valeurs des plugins offerts</p>
+        </header>
+
+        <section class="formula-features-grid">
+            <div class="formula-feature-card animated">
+                <div class="formula-feature-title"><span style="color: #8123fd; font-size: 25px; font-weight: 900;">01</span> <b>- Moteur</b> de réservation</div>
+            </div>
+
+            <div class="formula-feature-card animated">
+                <div class="formula-feature-title"><span style="color: #8123fd; font-size: 25px; font-weight: 900;">02</span> <b>- Woocommerce</b><br>paiement Add-on</div>
+            </div>
+
+            <div class="formula-feature-card animated">
+                <div class="formula-feature-title"><span style="color: #8123fd; font-size: 25px; font-weight: 900;">03</span> <b>- Taux</b><br>et tarifs variables</div>
+            </div>
+
+            <div class="formula-feature-card animated">
+                <div class="formula-feature-title"><span style="color: #8123fd; font-size: 25px; font-weight: 900;">04</span> <b>- Générateur</b><br>de factures PDF</div>
+            </div>
+
+            <div class="formula-feature-card animated">
+                <div class="formula-feature-title"><span style="color: #8123fd; font-size: 25px; font-weight: 900;">05</span> <b>- Plugin</b><br>de demande de paiement</div>
+            </div>
+
+            <div class="formula-feature-card animated">
+                <div class="formula-feature-title"><span style="color: #8123fd; font-size: 25px; font-weight: 900;">06</span> <b>- Personnalisation</b><br>des règles de réservation</div>
+            </div>
+
+            <div class="formula-feature-card animated">
+                <div class="formula-feature-title"><span style="color: #8123fd; font-size: 25px; font-weight: 900;">07</span> <b>- Reviews</b><br>Add-on</div>
+            </div>
+
+            <div class="formula-feature-card animated">
+                <div class="formula-feature-title"><span style="color: #8123fd; font-size: 25px; font-weight: 900;">08</span> <b>- Intégration</b> Payzone</div>
+            </div>
+
+            <div class="formula-feature-card animated">
+                <div class="formula-feature-title"><span style="color: #8123fd; font-size: 25px; font-weight: 900;">09</span> <b>- Option</b> de tri avancé</div>
+            </div>
+
+            <div class="formula-feature-card animated">
+                <div class="formula-feature-title"><span style="color: #8123fd; font-size: 25px; font-weight: 900;">10</span> <b>- Synchronisation</b><br>automatique avec les OTAs</div>
+            </div>
+
+            <div class="formula-feature-card animated">
+                <div class="formula-feature-title"><span style="color: #8123fd; font-size: 25px; font-weight: 900;">11</span> <b>- Calendrier</b> des<br>disponibilités en temps réel</div>
+            </div>
+
+            <div class="formula-feature-card animated">
+                <div class="formula-feature-title"><span style="color: #8123fd; font-size: 25px; font-weight: 900;">12</span> <b>- Nombre</b> illimité<br>de logements</div>
+            </div>
+			
+			<div class="formula-feature-card animated">
+                <div class="formula-feature-title"><span style="color: #8123fd; font-size: 25px; font-weight: 900;">13</span> <b>- Notification</b> automatisée par mail</div>
+            </div>
+			
+			<div class="formula-feature-card animated">
+                <div class="formula-feature-title"><span style="color: #8123fd; font-size: 25px; font-weight: 900;">14</span> <b>- Traduisez</b> votre site web et rendez-le multilingue</div>
+            </div>
+			
+			<div class="formula-feature-card animated">
+                <div class="formula-feature-title"><span style="color: #8123fd; font-size: 25px; font-weight: 900;">15</span> <b>- Tarification</b> saisonnière dynamique</div>
+            </div>
+			
+			<div class="formula-feature-card animated" id="formula-feature-id">
+                <div class="formula-feature-title" ><span style="color: #8123fd; font-size: 25px; font-weight: 900;">16</span> <b style="color: #fff;">- Accepter</b><span style="color: #fff;"> le paiement en ligne ou après l’arrivée</span></div>
+            </div>
+			
+			<div class="formula-feature-card animated" id="formula-feature-id">
+                <div class="formula-feature-title"><span style="color: #8123fd; font-size: 25px; font-weight: 900;">17</span> <b style="color: #fff;">- Visualiser</b><span style="color: #fff;"> vos ventes</span></div>
+            </div>
+			
+			<div class="formula-feature-card animated" id="formula-feature-id">
+                <div class="formula-feature-title"><span style="color: #8123fd; font-size: 25px; font-weight: 900;">18</span> <b style="color: #fff;">- Plusieurs</b><span style="color: #fff;"> propriétés réservables en une seule fois</span></div>
+            </div>
+			
+			<div class="formula-feature-card animated" id="formula-feature-id">
+                <div class="formula-feature-title"><span style="color: #8123fd; font-size: 25px; font-weight: 900;">19</span> <b style="color: #fff;">- Enregistrer</b> <span style="font-size: 13px; color: #fff;">les réservations manuellement et modifiez les réservations d’origine</span></div>
+            </div>
+			
+			<div class="formula-feature-card animated" id="formula-feature-id">
+                <div class="formula-feature-title"><span style="color: #8123fd; font-size: 25px; font-weight: 900;">20</span> <b style="color: #fff;">- Siteweb</b><span style="color: #fff;"> convivial pour les mobiles</span></div>
+            </div>
+			
+			<div class="formula-feature-card animated" id="formula-feature-id">
+                <div class="formula-feature-title" style="font-size: 2.5rem; text-align: center; color: #fff;">...</div>
+            </div>
+			
+        </section>
+
+        <section class="comparison-section animated">
+            <h2 class="comparison-title">Taux de commission des autres services.</h2>
+            <p class="comparison-subtitle">- OTA/Channel manager</p>
+            <img src="https://raw.githubusercontent.com/erictranfe34/comsvg/f292ff272883c2f125d306a337df68682c10e603/commission1.svg"></section>
+            
+        </section>
+
+        <section id="notresolutionbg" class="solution-section animated">
+            <h2 class="solution-title">Notre Solution <div><svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45.09 72.39">
+<g id="Layer_1-2" data-name="Layer 1">
+    <path class="clsxxxx45-1" d="M45.09,16.51l-4.93-4.12-1.12-6.33-6.33-1.12L28.59,0l-6.04,2.21-6.04-2.21-4.13,4.94-6.33,1.11-1.11,6.33L0,16.51l2.21,6.04-2.21,6.04,4.94,4.13,1.11,6.33,6.33,1.11,4.13,4.94,6.04-2.21,6.04,2.21,4.12-4.94,6.33-1.12,1.12-6.33,4.93-4.12-2.21-6.04,2.21-6.04ZM22.55,36.39c-7.63,0-13.84-6.21-13.84-13.84s6.21-13.84,13.84-13.84,13.83,6.21,13.83,13.84-6.2,13.84-13.83,13.84ZM22.55,11.21c-6.27,0-11.34,5.08-11.34,11.34s5.07,11.34,11.34,11.34,11.33-5.08,11.33-11.34-5.07-11.34-11.33-11.34ZM25.61,22.94c-.99,1.27-2.01,2.53-3.03,3.79-.44.54-.84,1.03-1.14,1.41-.17.21-.34.42-.51.63-.1.13-.3.13-.41,0-.42-.49-3.68-4.31-4.96-5.85-.09-.1-.18-.22-.26-.32-.11-.16.07-.29.23-.2,1.7.63,3.25,1.52,4.69,2.57,1-1.31,2.09-2.55,3.29-3.71,1.91-1.79,3.95-3.33,6.45-4.38.09-.04.22-.06.26.05-1.33,2.09-3.1,4.01-4.61,6.02ZM35.11,44.3l1.27-.22v28.31l-13.83-12-13.84,12v-28.3l1.27.22,5.11,6.1,7.46-2.73,7.47,2.73,5.09-6.11Z"/>
+  </g>
+</svg></div></h2>
+            <p class="solution-subtitle">Making your business connected</p>
+            <img class="solution-subtitle2" src="https://raw.githubusercontent.com/erictranfe34/comsvg1/0c4e8ae744812deec807f1b65b75da1ae0f89c5d/website%20commision.svg"></section>
+
+        <section class="contact-section animated" id="contact">
+            <h2 class="contact-title">Discutons de vos besoins !</h2>
+            <div class="contact-info">
+                <a href="mailto:Contact@piixeldev.com">📧 Contact@piixeldev.com</a>
+                <a href="https://wa.me/212687235623" target="_blank">📞 +212 687235623</a>
+            </div>
+        </section>
+        
+        <footer class="footer">
+			<p>Copyright 2025 | <b>PiixelDEV ©</b> All rights reserved</p>
+        </footer>
+    </div>
+
+    <script>
+        // Scripts from piixel 1.html
+        document.addEventListener('DOMContentLoaded', function() {
+            const serviceItems = document.querySelectorAll('.service-item');
+            
+            serviceItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px) scale(1.05)';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            const buttons = document.querySelectorAll('.btn-primary, .btn-secondary');
+            
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                    }, 150);
+                });
+            });
+
+            let ticking = false;
+            
+            function updateParallax() {
+                const scrolled = window.pageYOffset;
+                const parallax = document.querySelector('body');
+                const speed = scrolled * 0.5;
+                
+                parallax.style.backgroundPosition = `center ${speed}px`;
+                ticking = false;
+            }
+            
+            function requestTick() {
+                if (!ticking) {
+                    requestAnimationFrame(updateParallax);
+                    ticking = true;
+                }
+            }
+            
+            window.addEventListener('scroll', requestTick);
+        });
+
+        // Scripts from piixel 2.html
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.transform = 'translateY(0)';
+                    entry.target.style.opacity = '1';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.stat-card, .feature-card, .design-card').forEach(card => {
+            card.style.transform = 'translateY(30px)';
+            card.style.opacity = '0';
+            card.style.transition = 'all 0.6s ease';
+            observer.observe(card);
+        });
+
+        const phone = document.querySelector('.phone-mockup');
+        phone.addEventListener('mouseenter', () => {
+            phone.style.transform = 'scale(1.05) rotateY(5deg)';
+        });
+        
+        phone.addEventListener('mouseleave', () => {
+            phone.style.transform = 'scale(1) rotateY(0deg)';
+        });
+
+        // Scripts from piixel 3.html
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+
+        function showDemo() {
+            alert('Démo bientôt disponible ! Contactez-nous pour en savoir plus.');
+        }
+
+        const formulaObserverOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const formulaObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, formulaObserverOptions);
+
+        document.querySelectorAll('.formula-feature-card, .comparison-section, .solution-section').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease-out';
+            formulaObserver.observe(el);
+        });
+
+        document.querySelectorAll('.formula-feature-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-8px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
